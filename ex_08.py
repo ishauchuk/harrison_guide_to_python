@@ -18,3 +18,9 @@ for i in names:
     else:
         print(f"The class {num} is empty!")
     num += 1
+
+car = None
+if not car:
+    print("Taxi for you!")
+else:
+    print("You have a car!")
