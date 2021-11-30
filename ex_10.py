@@ -87,6 +87,6 @@ to the general aspect of the art in the present time.
 shekspir_1 = shekspir.lower()
 ralph_1 = ralph.lower()
 
-print("Both words are:\n\t", *list(set(shekspir_1.split(' ')) & set(ralph_1.split(' '))), sep=' ')
-print("Unique words are:\n\t", *list(set(shekspir_1.split(' ')) ^ set(ralph_1.split(' '))), sep=' ')
-print("Unique words are:\n\t", *list(set(ralph_1.split(' ')) ^ set(shekspir_1.split(' '))), sep=' ')
+print("Both words are:\n\t", *list(set(shekspir_1.split()) & set(ralph_1.split())))
+print("Unique words are:\n\t", *list(set(shekspir_1.split()) ^ set(ralph_1.split())))
+print("Unique words are:\n\t", *list(set(ralph_1.split()) ^ set(shekspir_1.split())))
